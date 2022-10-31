@@ -10,6 +10,7 @@
             src="https://assets.thdstatic.com/images/v1/home-services/personalized-home-services/php_professionalInstallation_services.jpg"
             alt=""
             class="img-fluid"
+            loading="lazy"
           />
         </div>
         <!-- Subtitle -->

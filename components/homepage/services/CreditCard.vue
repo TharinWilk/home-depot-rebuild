@@ -10,6 +10,7 @@
             src="https://assets.thdstatic.com/images/v1/plcc-credit-card.png"
             alt=""
             class="img-fluid"
+            loading="lazy"
           />
         </div>
         <!-- Subtitle -->

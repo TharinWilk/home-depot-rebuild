@@ -11,6 +11,7 @@
         src="~/assets\images\hampton-laurel-oaks.png"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>
@@ -26,6 +27,7 @@
         src="~/assets\images\hampton-glenridge-falls.png"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>
@@ -41,6 +43,7 @@
         src="~/assets\images\hampton-river-expresso.png"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>
@@ -58,6 +61,7 @@
         src="~/assets\images\hampton-fire-pit.png"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>

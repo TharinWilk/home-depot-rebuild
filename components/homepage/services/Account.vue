@@ -10,6 +10,7 @@
             src="https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Test_and_Target/UX_Assets/Welcome-to-Home-Depot.jpg"
             alt=""
             class="img"
+            loading="lazy"
           />
         </div>
         <!-- Text -->

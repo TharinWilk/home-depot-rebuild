@@ -13,13 +13,15 @@
     </div>
     <!-- Rating -->
     <div class="card-body">
-      <a href="#" class="card-link">
-        <Icon name="ph:star-fill" size=".75rem" />
-        <Icon name="ph:star-fill" size=".75rem" />
-        <Icon name="ph:star-fill" size=".75rem" />
-        <Icon name="ph:star-fill" size=".75rem" />
-        <Icon name="ph:star-half-fill" size=".75rem" />
-        <span class="card-reviews"> ({{ randomNumber }})</span>
+      <a href="#" class="card-link d-flex">
+        <div>
+          <Icon name="ph:star-fill" size=".75rem" />
+          <Icon name="ph:star-fill" size=".75rem" />
+          <Icon name="ph:star-fill" size=".75rem" />
+          <Icon name="ph:star-fill" size=".75rem" />
+          <Icon name="ph:star-half-fill" size=".75rem" />
+        </div>
+        <span class="card-reviews ms-1"> ({{ randomNumber }})</span>
       </a>
     </div>
     <!-- Price -->

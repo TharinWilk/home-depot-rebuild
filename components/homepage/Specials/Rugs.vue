@@ -11,6 +11,7 @@
         src="https://images.thdstatic.com/productImages/ce11ecfb-4d1c-4889-abbd-ab208aaea983/svn/gray-home-decorators-collection-outdoor-rugs-32467-64_300.jpg"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>
@@ -26,6 +27,7 @@
         src="https://images.thdstatic.com/productImages/ce11ecfb-4d1c-4889-abbd-ab208aaea983/svn/gray-home-decorators-collection-outdoor-rugs-32467-64_300.jpg"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>
@@ -41,6 +43,7 @@
         src="https://images.thdstatic.com/productImages/5115b65e-e24a-49e3-b9b0-8e541f10037b/svn/blue-home-decorators-collection-outdoor-rugs-79337-64_300.jpg"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>
@@ -58,6 +61,7 @@
         src="https://images.thdstatic.com/productImages/2942d6cd-dca2-4be7-acfa-965d316cbe12/svn/blue-multicolor-nourison-area-rugs-738776-64_300.jpg"
         alt=""
         class="card-img-top"
+        loading="lazy"
       />
     </ItemCard>
   </div>

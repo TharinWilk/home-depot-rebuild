@@ -3,7 +3,7 @@
     <div class="card border-0 h-100">
       <a href="" class="card-link card-body transition-4">
         <div class="border-bottom">
-          <img :src="src" alt="" class="link-image mb-2" />
+          <img :src="src" alt="" class="link-image mb-2" loading="lazy" />
         </div>
         <div class="text-black">
           <h3 class="card-text">{{ title }}</h3>
