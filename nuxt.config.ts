@@ -1,6 +1,19 @@
 export default defineNuxtConfig({
+  target: "static",
+
+  router: {
+    base: "/home-depot-rebuild/",
+  },
+
+  app: {
+    baseURL: "/home-depot-rebuild/",
+    buildAssetsDir: "/home-depot-rebuild/_nuxt/",
+  },
+
   modules: ["nuxt-icon"],
-  css: ["bootstrap/dist/css/bootstrap.min.css", "~/assets/styles/main.scss"],
+
+  css: ["~/assets/styles/main.scss"],
+
   script: [
     {
       src: [
@@ -9,6 +22,7 @@ export default defineNuxtConfig({
       ],
     },
   ],
+
   vite: {
     define: {
       "process.env.DEBUG": false,

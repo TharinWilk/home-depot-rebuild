@@ -1,11 +1,13 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 // Base styles
 :root {
   --bs-primary: #f96302;
 }
+
+$theme-colors: (
+  primary: #f96302,
+);
 
 html,
 body {
@@ -70,3 +72,5 @@ p {
 .transition-5 {
   transition: 0.5s ease;
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap";
