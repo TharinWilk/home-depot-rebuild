@@ -54,5 +54,6 @@ const link = {
 <style scoped>
 .card {
   min-height: 530px;
+  box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.4);
 }
 </style>

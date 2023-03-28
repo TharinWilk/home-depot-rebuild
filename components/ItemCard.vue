@@ -1,5 +1,5 @@
 <template>
-  <div class="card my-3 border-0">
+  <div class="card my-3 border-1">
     <!-- Image -->
     <a href="" style="height: 200px">
       <slot />
@@ -90,6 +90,7 @@ let randomNumber = computed(() => {
 <style scoped>
 .card {
   width: 14rem;
+  box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.4);
 }
 .card-text {
   display: -webkit-box;
