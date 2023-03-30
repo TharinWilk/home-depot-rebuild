@@ -8,8 +8,8 @@
       <div class="w-75 d-flex justify-content-between">
         <div class="input-group me-4">
           <input type="text" class="form-control" />
-          <button class="input-group-text" id="basic-addon1">
-            <Icon name="ph:magnifying-glass" />
+          <button class="input-group-text bg-primary" id="basic-addon1">
+            <Icon name="ph:magnifying-glass" color="white" />
           </button>
         </div>
         <button class="icon-btn" aria-label="Your shopping cart">
@@ -40,7 +40,8 @@
         <Dropdown>
           <template v-slot:button>
             <Icon name="ph:map-pin-fill" size="1rem" class="me-1" />
-            <span>500 S Santa Fe Dr. Denver, Co.</span>
+            <span>500 S Santa Fe Dr.</span>
+            <span class="d-none d-sm-inline"> Denver, Co.</span>
           </template>
           <template v-slot:content>
             <div class="container">
@@ -52,7 +53,11 @@
         </Dropdown>
       </div>
 
-      <div class="d-flex justify-content-center align-items-center">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        @mouseover="showText('delivery')"
+        @mouseout="clearText"
+      >
         <Dropdown>
           <template v-slot:button>
             <Icon
@@ -60,8 +65,10 @@
               size="1.5rem"
               class="me-1"
             />
-            <span class="me-1">Delivers to</span>
-            <span class="fw-bold">80281</span>
+            <span class="d-none d-sm-inline me-1 transition-4"
+              >Delivers to</span
+            >
+            <span class="fw-bold transition-4">80281</span>
           </template>
           <template v-slot:content>
             <div class="container content-container">
@@ -89,6 +96,18 @@
     </div>
   </nav>
 </template>
+
+<script setup lang="ts">
+const hoveredDropdown = ref<string | null>(null);
+
+const showText = (param: string) => {
+  hoveredDropdown.value = param;
+};
+
+const clearText = () => {
+  hoveredDropdown.value = null;
+};
+</script>
 
 <style scoped>
 .logo {
