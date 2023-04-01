@@ -1,40 +1,10 @@
 <template>
   <nav class="navbar navbar-light bg-light pb-0">
-    <div class="container-fluid">
-      <a href="#" class="navbar-brand">
-        <img src="~/assets/images/logo.png" alt="" class="logo" />
-      </a>
-
-      <div class="w-75 d-flex justify-content-between">
-        <div class="input-group me-4">
-          <input type="text" class="form-control" />
-          <button class="input-group-text bg-primary" id="basic-addon1">
-            <Icon name="ph:magnifying-glass" color="white" />
-          </button>
-        </div>
-        <button class="icon-btn" aria-label="Your shopping cart">
-          <Icon name="ph:shopping-cart" size="2rem" class="text-primary" />
-        </button>
-      </div>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <NavMenu />
-      </div>
-    </div>
+    <NavbarDesktop class="d-none d-sm-flex" />
+    <NavbarMobile class="d-flex d-sm-none" />
 
     <div
-      class="container-fluid d-flex justify-content-between align-items-center text-white bg-primary py-1"
+      class="sm-container-fluid d-flex justify-content-between align-items-center text-white bg-primary py-1 w-100"
     >
       <div class="d-flex justify-content-center align-items-center">
         <Dropdown>
@@ -53,12 +23,8 @@
         </Dropdown>
       </div>
 
-      <div
-        class="d-flex justify-content-center align-items-center"
-        @mouseover="showText('delivery')"
-        @mouseout="clearText"
-      >
-        <Dropdown>
+      <div class="d-flex justify-content-center align-items-center">
+        <Dropdown :align-right="true">
           <template v-slot:button>
             <Icon
               name="mdi:truck-delivery-outline"
@@ -71,7 +37,7 @@
             <span class="fw-bold transition-4">80281</span>
           </template>
           <template v-slot:content>
-            <div class="container content-container">
+            <div class="container content-container dropdown-menu-end">
               <div class="border-bottom">
                 <span>Enter delivery ZIP Code</span>
                 <input type="text" class="form-control my-3" />
@@ -96,31 +62,3 @@
     </div>
   </nav>
 </template>
-
-<script setup lang="ts">
-const hoveredDropdown = ref<string | null>(null);
-
-const showText = (param: string) => {
-  hoveredDropdown.value = param;
-};
-
-const clearText = () => {
-  hoveredDropdown.value = null;
-};
-</script>
-
-<style scoped>
-.logo {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.icon-btn {
-  border: none;
-  background-color: transparent;
-}
-
-.navbar-toggler-icon {
-  --bs-navbar-active-color: orange;
-}
-</style>

@@ -9,7 +9,10 @@
     >
       <slot name="button" />
     </button>
-    <ul class="dropdown-menu animate glide-in">
+    <ul
+      class="dropdown-menu animate glide-in"
+      :class="alignRight ? 'dropdown-menu-end' : ''"
+    >
       <slot name="content" />
     </ul>
   </div>
@@ -31,6 +34,10 @@ defineProps({
   textColor: {
     type: String,
     default: "white",
+  },
+  alignRight: {
+    type: Boolean,
+    default: false,
   },
 });
 </script>
