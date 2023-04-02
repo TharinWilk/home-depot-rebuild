@@ -71,6 +71,10 @@ a:hover {
   transition: 0.4s;
 }
 
+a:hover {
+  box-shadow: 0px 0px 5px 0px rgba(51, 51, 51, 0.4);
+}
+
 a:hover .nav-icon,
 a:hover span {
   color: #f96302;

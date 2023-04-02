@@ -1,5 +1,5 @@
 <template>
-  <div class="footer bg-white container- py-3 px-3">
+  <div class="footer bg-surface container- py-3 px-3">
     <div class="wrapper row row-cols-1 row-cols-sm-3">
       <!-- Customer Services -->
       <div class="text-center mb-4">
